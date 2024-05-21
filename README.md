@@ -19,7 +19,13 @@ For comparison, since I've already split the 196,601 words into separate files b
 | 6 letters   | 16,706 words    |
 | 7 letters   | 25,473 words    |
 | 8 letters   | 31,736 words    |
-| 9+ letters  | 107,771 words   |
+| 9 letters   | 31,229 words    |
+| 10 letters  | 25,028 words    |
+| 11 letters  | 18,735 words    |
+| 12 letters  | 13,515 words    |
+| 13 letters  | 9,323 words     |
+| 14 letters  | 6,102 words     |
+| 15 letters  | 3,839 words     |
 
 </br>
 Of course, I could always do this filtering each time I receive a new word to process, but I prefer to have some of the sorting and grouping done in advance, since it allows me to narrow my search even further and reduce the computational complexity of my program as much as possible.
