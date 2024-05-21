@@ -13,8 +13,8 @@ touch 9+_letter_words.txt
 
 cd ..
 
-for i in {2..8} do
-    grep -E "^[A-Z]{${i}}$" $src > $target/${i}_letter_words.txt
+for i in {2..8}; do
+    cat $src | grep -E "^[A-Z]{${i}}$" > $target/${i}_letter_words.txt
 done
 
-grep -E "^[A-Z]{9,}$" $src > $target/9+_letter_words.txt
+cat $src | grep -E "^[A-Z]{9,}$" > $target/9+_letter_words.txt
