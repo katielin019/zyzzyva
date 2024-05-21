@@ -29,3 +29,10 @@ For comparison, since I've already split the 196,601 words into separate files b
 
 </br>
 Of course, I could always do this filtering each time I receive a new word to process, but I prefer to have some of the sorting and grouping done in advance, since it allows me to narrow my search even further and reduce the computational complexity of my program as much as possible.
+
+## how to use
+I've included the scripts I wrote and used to process the text in the original file. If you want to recreate the steps I took to populate the word lists I've made, you should run `scripts/by_length.sh` first, and then run `scripts/split_longer_words.sh` if you want to split words that have 9+ letters into their respective bins. If you want to just keep a file with all 9+ letter words grouped together, you don't need to run the second script.
+
+I included `scripts/check_count.sh`, even though it doesn't functionally add anything to the text processing actions. I wrote it after executing `scripts/split_longer_words.sh` to make sure that all the words from the original source file were accounted for. 15 is the maximum number of letters tht a word can have in Scrabble (the board dimensions are 15x15), but I just wanted to be sure that there weren't any words I missed somehow.
+
+The way I wrote the scripts assumes that you're running them from the root of this repo, i.e. `zyzzyva`. If you run them from inside the `scripts` directory, you'll have to modify the script so that it can locate the source file properly.
